@@ -9,7 +9,7 @@ public class Customer {
   private String lastName;
   private String username;
   private String password;
-  private int bankBalance;
+  private double bankBalance;
   private int points;
   private List<Transaction> transactionsList;
 
@@ -21,7 +21,7 @@ public class Customer {
    * @param password The customer's password
    * @param bankBalance The customer's initial bank balance
    */
-  public Customer(String firstName, String lastName, String username, String password, int bankBalance) {
+  public Customer(String firstName, String lastName, String username, String password, double bankBalance) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.username = username;
@@ -83,7 +83,7 @@ public class Customer {
    * Gets the customer's bank balance.
    * @return The bank balance
    */
-  public int getBankBalance() {
+  public double getBankBalance() {
     return bankBalance;
   }
 
@@ -91,7 +91,7 @@ public class Customer {
    * Sets the customer's bank balance.
    * @param bankBalance The new bank balance
    */
-  public void setBankBalance(int bankBalance) {
+  public void setBankBalance(double bankBalance) {
     this.bankBalance = bankBalance;
   }
 
