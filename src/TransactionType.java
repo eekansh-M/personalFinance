@@ -1,0 +1,3 @@
+public enum TransactionType {
+  ENTERTAINMENT, ESSENTIALS, COSMETICS, CLOTHES,
+}

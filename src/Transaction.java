@@ -4,21 +4,25 @@
 public class Transaction {
   private String transactionName;
   private int transactionMonth;
+  private String transactionDescription;
   private int transactionDay;
   private int transactionYear;
+  private TransactionType transactionType;
 
   /**
-   * Constructs a new Transaction with the specified details.
+   * Constructs a new Transactions.Transaction with the specified details.
    * @param transactionName The name/description of the transaction
    * @param transactionMonth The month when the transaction occurred
+   *
    * @param transactionDay The day when the transaction occurred
    * @param transactionYear The year when the transaction occurred
    */
-  public Transaction(String transactionName, int transactionMonth, int transactionDay, int transactionYear) {
+  public Transaction(String transactionName, int transactionMonth, int transactionDay, int transactionYear, String transactionDescription) {
     this.transactionName = transactionName;
     this.transactionMonth = transactionMonth;
     this.transactionDay = transactionDay;
     this.transactionYear = transactionYear;
+    this.transactionDescription = transactionDescription;
   }
 
   /**
@@ -52,4 +56,14 @@ public class Transaction {
   public int getTransactionYear() {
     return transactionYear;
   }
+
+  public String getTransactionDescription() {
+    return transactionDescription;
+  }
+
+  public void setTransactionDescription(String transactionDescription) {
+    this.transactionDescription = transactionDescription;
+  }
+
+
 }
